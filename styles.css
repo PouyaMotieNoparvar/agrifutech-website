@@ -248,7 +248,7 @@ a:hover { color: var(--brand-2); }
 .logo-tile.small img { max-width: 200px; }
 .funder-logos { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 14px; }
 .card-logo { display: inline-block; background: #fff; border-radius: 10px; padding: 6px 10px; margin-bottom: 10px; border: 1px solid var(--line); }
-.card-logo img { height: 52px; width: auto; display: block; }
+.card-logo img { height: 60px; width: auto; max-width: 100%; display: block; }
 img.avatar.photo { width: 96px; height: 96px; object-fit: cover; padding: 0; border: 3px solid var(--brand-tint); background: #fff; }
 @media (max-width: 480px) { img.avatar.photo { width: 72px; height: 72px; } .logo-tile { height: 64px; } .logo-tile img { max-width: 200px; } }
 .funder-block { display: block; width: fit-content; max-width: 100%; margin: 0 auto; background: #fff; border-radius: 12px;
