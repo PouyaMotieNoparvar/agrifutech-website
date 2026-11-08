@@ -12,6 +12,7 @@ This repository holds the website only. The AgriFuTech platform code is kept in 
 | Platform stages, progress timeline, news and events | `content.js` (plain data; each field is explained at the top of the file) |
 | Text of the page, team, partners and contact | `index.html` |
 | Colours and layout | `styles.css` (light and dark themes at the top) |
+| Photos and logos | `assets/` (web-sized copies). Originals go in `Images/`, which is not published (`.gitignore`) |
 
 An event looks like this in `content.js`:
 
