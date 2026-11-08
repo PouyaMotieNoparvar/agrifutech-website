@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AgriFuTech · Decision support for plant breeding</title>
+  <meta name="description" content="AgriFuTech is a decision-support platform for plant breeding programmes, developed at the University of Galway with support from the Research Ireland ARC Hub.">
+  <meta property="og:title" content="AgriFuTech · Decision support for plant breeding">
+  <meta property="og:description" content="Transparent, auditable recommendations for which breeding lines to advance and how to allocate field trials.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#1f5f3f">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top" aria-label="AgriFuTech home">
+        <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><use href="#leaf"></use></svg>
+        <span>AgriFuTech</span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav id="site-nav" class="site-nav" aria-label="Main">
+        <a href="#platform">Platform</a>
+        <a href="#progress">Progress</a>
+        <a href="#news">News &amp; events</a>
+        <a href="#team">Team</a>
+        <a href="#partners">Partners</a>
+        <a class="nav-cta" href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- shared icon -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="leaf" viewBox="0 0 32 32">
+      <path d="M16 29V14" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
+      <path d="M16 17c-6.5 0-10.5-4-10.5-11 6.5 0 10.5 4 10.5 11Z" fill="currentColor" opacity=".55"/>
+      <path d="M16 14c0-6.5 4-10.5 11-10.5 0 6.5-4 10.5-11 10.5Z" fill="currentColor"/>
+    </symbol>
+  </svg>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="wrap hero-grid">
+        <div>
+          <p class="eyebrow">University of Galway · Research Ireland ARC Hub supported</p>
+          <h1>Better breeding decisions, with every step on the record.</h1>
+          <p class="lead">AgriFuTech is a decision-support platform for plant breeding programmes. It helps breeders decide
+            which lines to advance and how to allocate field trials. Every recommendation is explained, every human decision
+            is kept, and any past decision can be reconstructed exactly as it was taken.</p>
+          <div class="hero-actions">
+            <a class="btn" href="#platform">See what the platform does</a>
+            <a class="btn btn-ghost" href="#contact">Get in touch</a>
+          </div>
+        </div>
+        <figure class="hero-card" aria-label="Example: a recommendation explained">
+          <div class="hc-head"><span class="dot"></span>Recommendation · Advance F5 lines to yield trials</div>
+          <ol class="hc-list">
+            <li><span class="hc-line">Line 014</span><span class="bar" style="--w:92%"></span><span class="hc-p">96%</span></li>
+            <li><span class="hc-line">Line 203</span><span class="bar" style="--w:81%"></span><span class="hc-p">88%</span></li>
+            <li><span class="hc-line">Line 077</span><span class="bar" style="--w:70%"></span><span class="hc-p">74%</span><span class="chip warn">uncertain</span></li>
+            <li><span class="hc-line">Line 150</span><span class="bar" style="--w:63%"></span><span class="hc-p">61%</span><span class="chip warn">uncertain</span></li>
+          </ol>
+          <p class="hc-foot">Ranked by the breeder's own trait priorities; percentages show how likely each line is to truly belong in the top group.
+            <span class="muted">Illustration with synthetic values.</span></p>
+        </figure>
+      </div>
+    </section>
+
+    <!-- KEY FACTS -->
+    <section class="facts" aria-label="Key facts">
+      <div class="wrap facts-grid">
+        <div><b>€150k</b><span>Research Ireland ARC Hub support</span></div>
+        <div><b>Proof of concept</b><span>Decision Core working end to end</span></div>
+        <div><b>Validated</b><span>on public historical breeding records</span></div>
+        <div><b>Open to partners</b><span>for pilot seasons and data collaboration</span></div>
+      </div>
+    </section>
+
+    <!-- PLATFORM -->
+    <section class="section" id="platform">
+      <div class="wrap">
+        <p class="eyebrow">The platform</p>
+        <h2>From breeding data to decisions you can defend</h2>
+        <p class="section-lead">The full AgriFuTech platform connects a breeding programme's data to its yearly selection decisions and
+          learns from what happens in the field. Select a stage to see what it does.</p>
+
+        <div class="legend" aria-label="Legend">
+          <span class="chip ok">Working today</span>
+          <span class="chip dev">In development</span>
+          <span class="chip plan">Planned</span>
+        </div>
+
+        <div class="flow" role="tablist" aria-label="Platform stages">
+          <!-- generated by script.js from STAGES; static fallback below -->
+        </div>
+        <div class="stage-detail" id="stage-detail" role="tabpanel" aria-live="polite"></div>
+
+        <div class="governance">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5l-8-3Z" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m8.5 12 2.4 2.4 4.6-4.8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <div>
+            <h3>Across every stage: governance and provenance</h3>
+            <p>Role-based access per breeding project, approval by a second person, a tamper-evident audit history,
+              versioned and fingerprinted methods, verified backups, and the ability to see exactly what was known when a
+              decision was taken. <span class="chip ok">Working today</span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY -->
+    <section class="section alt">
+      <div class="wrap">
+        <p class="eyebrow">Why it matters</p>
+        <h2>Principles we build on</h2>
+        <div class="cards three">
+          <article class="card">
+            <h3>The breeder decides</h3>
+            <p>AgriFuTech recommends; people decide. Changes to a recommendation are recorded with a reason, and nothing is
+              advanced without the breeder's decision and, where required, a second person's approval.</p>
+          </article>
+          <article class="card">
+            <h3>Honest about uncertainty</h3>
+            <p>Early-generation trial data is noisy. The platform shows how certain each selection is, flags lines that may be
+              wrongly included or left out, and never presents a guess as genetic gain.</p>
+          </article>
+          <article class="card">
+            <h3>Reproducible by design</h3>
+            <p>Inputs are frozen at decision time and every method version is fixed and fingerprinted, so any past
+              recommendation can be re-run and checked years later.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROGRESS -->
+    <section class="section" id="progress">
+      <div class="wrap">
+        <p class="eyebrow">Progress</p>
+        <h2>Where we are</h2>
+        <p class="section-lead">AgriFuTech is developed in increments. The first increment, the Decision Core, works end to end and has been
+          tested on synthetic and public historical breeding data. It has not yet been used with a partner's own data.</p>
+        <ol class="timeline" id="timeline"></ol>
+      </div>
+    </section>
+
+    <!-- NEWS & EVENTS -->
+    <section class="section alt" id="news">
+      <div class="wrap">
+        <p class="eyebrow">News &amp; events</p>
+        <h2>Latest</h2>
+        <div class="news-grid">
+          <div class="news-list" id="news-list"></div>
+          <aside class="events">
+            <h3>Upcoming events</h3>
+            <div id="events-list"></div>
+            <p class="muted small">Would you like a demonstration for your breeding team or research group?
+              <a href="#contact">Contact us</a>.</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- TEAM -->
+    <section class="section" id="team">
+      <div class="wrap">
+        <p class="eyebrow">Team</p>
+        <h2>The people behind AgriFuTech</h2>
+        <div class="cards team">
+          <article class="card person">
+            <div class="avatar" aria-hidden="true">PM</div>
+            <div>
+              <h3>Dr Peter McKeown</h3>
+              <p class="role">Translational Researcher (TR) and supervisor</p>
+              <p><a href="mailto:peter.mckeown@universityofgalway.ie">peter.mckeown@universityofgalway.ie</a></p>
+            </div>
+          </article>
+          <article class="card person">
+            <div class="avatar" aria-hidden="true">PM</div>
+            <div>
+              <h3>Pouya Motienoparvar</h3>
+              <p class="role">Technical Lead</p>
+              <p><a href="mailto:p.motienoparvar1@universityofgalway.ie">p.motienoparvar1@universityofgalway.ie</a></p>
+            </div>
+          </article>
+          <article class="card person hiring">
+            <div class="avatar ghost" aria-hidden="true">RA</div>
+            <div>
+              <h3>Research Assistant, backend development</h3>
+              <p class="role">Data pipelines, decision engine, integrations</p>
+              <p><span class="chip dev">Recruitment in progress</span></p>
+            </div>
+          </article>
+          <article class="card person hiring">
+            <div class="avatar ghost" aria-hidden="true">RA</div>
+            <div>
+              <h3>Research Assistant, frontend development</h3>
+              <p class="role">Breeder-facing interface, visualisation</p>
+              <p><span class="chip dev">Recruitment in progress</span></p>
+            </div>
+          </article>
+        </div>
+        <p class="muted small">Applications for both Research Assistant posts are closed; interviews are under way.</p>
+      </div>
+    </section>
+
+    <!-- PARTNERS -->
+    <section class="section alt" id="partners">
+      <div class="wrap">
+        <p class="eyebrow">Home and partners</p>
+        <h2>Where we are based</h2>
+        <div class="cards two">
+          <article class="card">
+            <h3>University of Galway</h3>
+            <ul class="plain">
+              <li>College of Science and Engineering</li>
+              <li>School of Biological and Chemical Sciences</li>
+              <li>Green Biosciences <span class="muted">(formerly the Plant &amp; AgriBiosciences Research Centre)</span></li>
+              <li>Ryan Institute</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Funding and collaboration</h3>
+            <ul class="plain">
+              <li>Supported by the <strong>Research Ireland ARC Hub</strong> (€150,000)</li>
+              <li>In cooperation with groups including <strong>Agriimmenance</strong>, Professor Charles Spillane's lab</li>
+            </ul>
+            <p class="muted small">We welcome breeding programmes and research groups interested in pilot seasons, retrospective studies
+              on historical data, or method review.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact" id="contact">
+      <div class="wrap contact-inner">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>Talk to us</h2>
+          <p class="section-lead">We are looking for breeding programmes and data partners for pilot seasons and retrospective studies,
+            and we are happy to present the platform to your team.</p>
+        </div>
+        <div class="contact-cards">
+          <a class="contact-card" href="mailto:p.motienoparvar1@universityofgalway.ie?subject=AgriFuTech">
+            <span class="cc-role">Technical Lead</span>
+            <span class="cc-name">Pouya Motienoparvar</span>
+            <span class="cc-mail">p.motienoparvar1@universityofgalway.ie</span>
+          </a>
+          <a class="contact-card" href="mailto:peter.mckeown@universityofgalway.ie?subject=AgriFuTech">
+            <span class="cc-role">Translational Researcher and supervisor</span>
+            <span class="cc-name">Dr Peter McKeown</span>
+            <span class="cc-mail">peter.mckeown@universityofgalway.ie</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p><strong>AgriFuTech</strong> · University of Galway · Supported by the Research Ireland ARC Hub</p>
+      <p class="muted small">This site uses no cookies, trackers or third-party scripts. Example figures on this page are illustrations with synthetic values.</p>
+    </div>
+  </footer>
+
+  <script src="content.js" defer></script>
+  <script src="script.js" defer></script>
+</body>
+</html>
