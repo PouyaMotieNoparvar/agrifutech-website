@@ -251,4 +251,6 @@ a:hover { color: var(--brand-2); }
 .card-logo img { height: 52px; width: auto; display: block; }
 img.avatar.photo { width: 96px; height: 96px; object-fit: cover; padding: 0; border: 3px solid var(--brand-tint); background: #fff; }
 @media (max-width: 480px) { img.avatar.photo { width: 72px; height: 72px; } .logo-tile { height: 64px; } .logo-tile img { max-width: 200px; } }
-.cofund { text-align: center; color: var(--ink-2); font-size: .9rem; margin: 14px auto 0; max-width: 760px; }
+.funder-block { display: block; width: fit-content; max-width: 100%; margin: 0 auto; background: #fff; border-radius: 12px;
+  padding: 8px 12px; border: 1px solid var(--line); }
+.funder-block img { display: block; width: 600px; max-width: 100%; height: auto; }
